@@ -43,6 +43,8 @@ namespace Practica_16
         }
 
         private void btn7_Click(object sender, EventArgs e)
+
+
         {
             if (txtpantalla.Text == "0" || operadorPresionado) txtpantalla.Clear();
             operadorPresionado = false;

@@ -11,7 +11,7 @@ namespace Practica_15
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
 
-                textBox1.Text = System.IO.File.ReadAllText(openFileDialog1.FileName);
+                button1.Text = System.IO.File.ReadAllText(openFileDialog1.FileName);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -19,7 +19,7 @@ namespace Practica_15
             if (saveFileDialog1.ShowDialog() == DialogResult.OK) ;
 
             string ruta = saveFileDialog1.FileName;
-            System.IO.File.WriteAllText(ruta, textBox1.Text);
+            System.IO.File.WriteAllText(ruta, button2.Text);
             MessageBox.Show("Archivo guardado correctamente en: " + ruta);
         }
     }
