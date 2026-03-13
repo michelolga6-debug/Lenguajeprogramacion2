@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c254518f6b144a8a407a74a4ea43b6a" Name="Diagram1">
+        <EntityTypeShape EntityType="Unidad1Model.Categorias" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.Clientes" Width="1.5" PointX="3.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.Compras" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.DetallesCompra" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.DetallesFactura" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.Facturas" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.Productos" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Unidad1Model.Proveedores" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="Unidad1Model.FK_Productos_Categorias" ManuallyRouted="false" />
+        <AssociationConnector Association="Unidad1Model.FK_Facturas_Clientes" ManuallyRouted="false" />
+        <AssociationConnector Association="Unidad1Model.FK_Compras_Proveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="Unidad1Model.FK_DetallesCompra_Compras" ManuallyRouted="false" />
+        <AssociationConnector Association="Unidad1Model.FK_DetallesCompra_Productos" ManuallyRouted="false" />
+        <AssociationConnector Association="Unidad1Model.FK_Detalles_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="Unidad1Model.FK_Detalles_Producto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
